@@ -1,0 +1,358 @@
+{
+  "schema_version": "0.1.0",
+  "created_at": "2026-05-16T14:30:00-04:00",
+
+  "source": {
+    "audio_file": "examples/audio/example_song.wav",
+    "lyrics_file": "examples/lyrics/example_lyrics.txt"
+  },
+
+  "processing": {
+    "alignment_backend": {
+      "name": "mfa",
+      "version": "3.0.0",
+      "acoustic_model": "english_us_arpa",
+      "dictionary": "english_us_arpa"
+    },
+
+    "audio": {
+      "input_file": "examples/audio/example_song.wav",
+      "used_for_alignment": "output/intermediate/example_song_normalized.wav",
+      "duration_seconds": 183.42,
+      "sample_rate": 16000,
+      "channels": 1,
+      "format": "wav"
+    },
+
+    "lyrics": {
+      "normalization": {
+        "case_folded": true,
+        "punctuation_removed_for_alignment": true,
+        "blank_lines_removed": true,
+        "original_text_preserved": true
+      }
+    }
+  },
+
+  "lyrics": {
+    "line_count": 3,
+    "lines": [
+      {
+        "id": 0,
+        "text": "Never gonna give you up",
+        "normalized_text": "never gonna give you up",
+        "words": [
+          {
+            "id": 0,
+            "text": "Never",
+            "normalized_text": "never"
+          },
+          {
+            "id": 1,
+            "text": "gonna",
+            "normalized_text": "gonna"
+          },
+          {
+            "id": 2,
+            "text": "give",
+            "normalized_text": "give"
+          },
+          {
+            "id": 3,
+            "text": "you",
+            "normalized_text": "you"
+          },
+          {
+            "id": 4,
+            "text": "up",
+            "normalized_text": "up"
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "text": "Never gonna let you down",
+        "normalized_text": "never gonna let you down",
+        "words": [
+          {
+            "id": 0,
+            "text": "Never",
+            "normalized_text": "never"
+          },
+          {
+            "id": 1,
+            "text": "gonna",
+            "normalized_text": "gonna"
+          },
+          {
+            "id": 2,
+            "text": "let",
+            "normalized_text": "let"
+          },
+          {
+            "id": 3,
+            "text": "you",
+            "normalized_text": "you"
+          },
+          {
+            "id": 4,
+            "text": "down",
+            "normalized_text": "down"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "text": "Never gonna run around and desert you",
+        "normalized_text": "never gonna run around and desert you",
+        "words": [
+          {
+            "id": 0,
+            "text": "Never",
+            "normalized_text": "never"
+          },
+          {
+            "id": 1,
+            "text": "gonna",
+            "normalized_text": "gonna"
+          },
+          {
+            "id": 2,
+            "text": "run",
+            "normalized_text": "run"
+          },
+          {
+            "id": 3,
+            "text": "around",
+            "normalized_text": "around"
+          },
+          {
+            "id": 4,
+            "text": "and",
+            "normalized_text": "and"
+          },
+          {
+            "id": 5,
+            "text": "desert",
+            "normalized_text": "desert"
+          },
+          {
+            "id": 6,
+            "text": "you",
+            "normalized_text": "you"
+          }
+        ]
+      }
+    ]
+  },
+
+  "alignment": {
+    "level": "word",
+    "quality_score": 0.91,
+    "quality_score_method": "syncverse_heuristic_v1",
+
+    "lines": [
+      {
+        "line_id": 0,
+        "text": "Never gonna give you up",
+        "start": 12.34,
+        "end": 14.82,
+        "duration": 2.48,
+        "quality_score": 0.94,
+        "words": [
+          {
+            "line_word_id": 0,
+            "text": "Never",
+            "start": 12.34,
+            "end": 12.78,
+            "duration": 0.44,
+            "quality_score": 0.95,
+            "source": "mfa"
+          },
+          {
+            "line_word_id": 1,
+            "text": "gonna",
+            "start": 12.79,
+            "end": 13.18,
+            "duration": 0.39,
+            "quality_score": 0.93,
+            "source": "mfa"
+          },
+          {
+            "line_word_id": 2,
+            "text": "give",
+            "start": 13.19,
+            "end": 13.68,
+            "duration": 0.49,
+            "quality_score": 0.94,
+            "source": "mfa"
+          },
+          {
+            "line_word_id": 3,
+            "text": "you",
+            "start": 13.69,
+            "end": 14.02,
+            "duration": 0.33,
+            "quality_score": 0.92,
+            "source": "mfa"
+          },
+          {
+            "line_word_id": 4,
+            "text": "up",
+            "start": 14.03,
+            "end": 14.82,
+            "duration": 0.79,
+            "quality_score": 0.91,
+            "source": "mfa"
+          }
+        ]
+      },
+      {
+        "line_id": 1,
+        "text": "Never gonna let you down",
+        "start": 15.1,
+        "end": 17.46,
+        "duration": 2.36,
+        "quality_score": 0.92,
+        "words": [
+          {
+            "line_word_id": 0,
+            "text": "Never",
+            "start": 15.1,
+            "end": 15.52,
+            "duration": 0.42,
+            "quality_score": 0.94,
+            "source": "mfa"
+          },
+          {
+            "line_word_id": 1,
+            "text": "gonna",
+            "start": 15.53,
+            "end": 15.9,
+            "duration": 0.37,
+            "quality_score": 0.92,
+            "source": "mfa"
+          },
+          {
+            "line_word_id": 2,
+            "text": "let",
+            "start": 15.91,
+            "end": 16.31,
+            "duration": 0.4,
+            "quality_score": 0.91,
+            "source": "mfa"
+          },
+          {
+            "line_word_id": 3,
+            "text": "you",
+            "start": 16.32,
+            "end": 16.69,
+            "duration": 0.37,
+            "quality_score": 0.91,
+            "source": "mfa"
+          },
+          {
+            "line_word_id": 4,
+            "text": "down",
+            "start": 16.7,
+            "end": 17.46,
+            "duration": 0.76,
+            "quality_score": 0.9,
+            "source": "mfa"
+          }
+        ]
+      },
+      {
+        "line_id": 2,
+        "text": "Never gonna run around and desert you",
+        "start": 18.05,
+        "end": 21.4,
+        "duration": 3.35,
+        "quality_score": 0.87,
+        "words": [
+          {
+            "line_word_id": 0,
+            "text": "Never",
+            "start": 18.05,
+            "end": 18.47,
+            "duration": 0.42,
+            "quality_score": 0.92,
+            "source": "mfa"
+          },
+          {
+            "line_word_id": 1,
+            "text": "gonna",
+            "start": 18.48,
+            "end": 18.86,
+            "duration": 0.38,
+            "quality_score": 0.91,
+            "source": "mfa"
+          },
+          {
+            "line_word_id": 2,
+            "text": "run",
+            "start": 18.87,
+            "end": 19.18,
+            "duration": 0.31,
+            "quality_score": 0.89,
+            "source": "mfa"
+          },
+          {
+            "line_word_id": 3,
+            "text": "around",
+            "start": 19.19,
+            "end": 19.91,
+            "duration": 0.72,
+            "quality_score": 0.87,
+            "source": "mfa"
+          },
+          {
+            "line_word_id": 4,
+            "text": "and",
+            "start": 19.92,
+            "end": 20.1,
+            "duration": 0.18,
+            "quality_score": 0.82,
+            "source": "mfa"
+          },
+          {
+            "line_word_id": 5,
+            "text": "desert",
+            "start": 20.11,
+            "end": 20.88,
+            "duration": 0.77,
+            "quality_score": 0.84,
+            "source": "mfa"
+          },
+          {
+            "line_word_id": 6,
+            "text": "you",
+            "start": 20.89,
+            "end": 21.4,
+            "duration": 0.51,
+            "quality_score": 0.86,
+            "source": "mfa"
+          }
+        ]
+      }
+    ]
+  },
+
+  "warnings": [
+    {
+      "type": "suspicious_word_duration",
+      "severity": "info",
+      "line_id": 2,
+      "word_id": 4,
+      "message": "Word duration is shorter than expected.",
+      "details": {
+        "word": "and",
+        "duration": 0.18
+      }
+    }
+  ],
+
+  "exports": {
+    "lrc": "output/example_song.lrc"
+  }
+}
