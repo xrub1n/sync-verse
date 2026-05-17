@@ -7,8 +7,10 @@ SyncVerse is a local-first lyric video and lyric synchronization tool. MVP 1 foc
 Agents should read:
 1. docs/project-statement.md
 2. docs/requirements.md
-3. docs/pipeline.md
-4. docs/example-json-mvp1.json
+3. docs/architecture.md
+4. docs/pipeline.md
+5. docs/json-schema.md
+6. docs/example-json-mvp1.json
 
 ## Rules
 - Do not change the MVP 1 JSON structure unless explicitly asked.
