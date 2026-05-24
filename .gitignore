@@ -2,6 +2,8 @@
 .env
 .venv/
 __pycache__/
+*.egg-info/
+.pytest_cache/
 
 # Dependencies
 node_modules/
@@ -17,6 +19,8 @@ projects/*
 *.mp3
 *.flac
 *.m4a
+*.ogg
+*.lab
 *.TextGrid
 *.log
 
