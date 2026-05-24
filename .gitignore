@@ -1,3 +1,26 @@
+# Local environment
+.env
+.venv/
+__pycache__/
+
+# Dependencies
+node_modules/
+
+# Generated and local-only SyncVerse data
+output/*
+!output/.gitkeep
+projects/*
+!projects/.gitkeep
+
+# Large or generated media/alignment artifacts
+*.wav
+*.mp3
+*.flac
+*.m4a
+*.TextGrid
+*.log
+
+# Local MFA model storage
 models/*
 !models/README.md
 !models/.gitkeep
